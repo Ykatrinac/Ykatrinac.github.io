@@ -1,0 +1,245 @@
+<HTML>
+<HEAD>
+ <TITLE>Christimas</TITLE>
+
+<STYLE type='text/css'>
+
+    #gift{
+      position:absolute;
+      left:1;
+      top:1;
+      z-index: 1;
+   }
+
+    #moon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 white;
+    }
+  
+    #square {
+      width: 100px;
+      height: 150px;
+      background: #281A1A;
+      left:400;
+      top:500;
+      z-index:2;
+    }
+ 
+    #triangle-up {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+    }
+    #triangle-up2 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+      transform:scale(2);
+    }
+    #triangle-up3 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+      transform:scale(3);
+    }
+    
+    #star-six {
+      top:40;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid yellow;
+      position: relative;
+      transform: scale(0.6);
+    }
+    #star-six:after {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid yellow;
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: -50px;
+    }
+    #pic2{
+      opacity:0.7;
+      position:absolute;
+      left:596;
+    }
+    #pic3{
+      opacity:0.5;
+      position:absolute;
+      left:810;
+      top:200;
+      z-index: 5;
+    }
+    #pic4{
+      opacity:0.5;
+      position:absolute;
+      left:410;
+      top:100;
+    }
+    #pic5{
+      opacity:0.8;
+      position:absolute;
+      left:10;
+      top:200;
+    }
+    #tree{
+      position:absolute;
+      left:1150;
+      top:50;
+    }
+    #cross {
+      top:400px;
+      left:1040px;
+      background: red;
+      height: 100px;
+      position: relative;
+      transform:scale(1);
+      width: 20px;
+    }
+    #cross:after {
+      background: red;
+      content: "";
+      height: 20px;
+      left: -40px;
+      position: absolute;
+      top: 40px;
+      width: 100px;
+    }
+    #square2 {
+      width: 100px;
+      height: 100px;
+      background: white;
+      position:relative;
+      opacity: 0.7;
+      top:300px;
+      left:1000px;
+    }
+    #infinity {
+      top:430px;
+      left:946px;
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+      transform: scale(0.4);
+    }
+    #infinity:before,
+    #infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 20px solid red;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    #infinity:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+    #badge-ribbon {
+      position: relative;
+      background: red;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      opacity:0.9;
+      top:140px;
+      left:1000px;
+      transform: scale(0.4);
+    }
+    #badge-ribbon:before,
+    #badge-ribbon:after {
+      content: '';
+      position: absolute;
+      border-bottom: 70px solid red;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      top: 70px;
+      left: -10px;
+      transform: rotate(-140deg);
+    }
+    #badge-ribbon:after {
+      left: auto;
+      right: -10px;
+      transform: rotate(140deg);
+    }
+ 
+</STYLE>
+
+</HEAD>
+<BODY bgcolor='#010043'>
+  <CENTER>
+    <SPAN style = 
+      "font-size: 80px; 
+      font-family: 'american typewriter light';
+      color:#F8F8FA"> 
+          Merry Christmas
+    </SPAN>
+  </CENTER>
+  
+<DIV id='moon'></DIV>
+<DIV id=gift>
+  <DIV id='infinity'></DIV>
+  <DIV id='cross'></DIV>
+  <DIV id='square2'></DIV>
+  <DIV id='badge-ribbon'></DIV>
+</DIV>
+  <IMG 
+    src='Christmashappy2.png' 
+    id='pic2' 
+    width=200 
+    onmouseover="src='santa2.png';" 
+    onmouseout="src='Christmashappy2.png';">
+  </IMG>
+  <IMG 
+    src='christmashappy3.png' 
+    id='pic3' 
+    onmouseover="src='santa4.png';" 
+    onmouseout="src='Christmashappy3.png';">
+  </IMG>
+  <IMG 
+    src='christmashappy4.png' 
+    id='pic4' 
+    width=100 
+    onmouseover="src='happy.png';" 
+    onmouseout="src='christmashappy4.png';">
+  </IMG>
+  <IMG 
+    src='Santa.png' 
+    id='pic5'
+    onmouseover="src='santa5.png';"
+    onmouseout="src='santa.png';">
+  </IMG>
+  <center>
+  <BR>
+  <DIV id='tree'>
+    <DIV id='star-six'></DIV>
+    <DIV id='triangle-up'></DIV>
+    <DIV id='triangle-up2'></DIV>
+    <DIV id='triangle-up3'></DIV>
+    <DIV id='square'></DIV>
+  </DIV>
+  </center>
+  
+</BODY>
+</HTML>
